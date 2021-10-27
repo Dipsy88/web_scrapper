@@ -24,7 +24,7 @@ func Do() {
 }
 
 // Send email
-func Send(body string) {
+func Send(body string, subject string) {
 	config := GetConfig()
 	from := config.Username
 	password := config.Password
@@ -39,7 +39,7 @@ func Send(body string) {
 	//body := "This is a sample email."
 	msg := "From: " + from + "\n" +
 		"To: " + to[0] + "\n" +
-		"Subject: Sale items\n\n" + body
+		"Subject: " + subject + "\n\n" + body
 	// Message
 	message := []byte(msg)
 

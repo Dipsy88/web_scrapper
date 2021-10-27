@@ -7,7 +7,8 @@ import (
 )
 
 const (
-	filePath string = "/Users/Dipesh/Documents/pass/config.json"
+//	filePath string = "/Users/Dipesh/Documents/pass/config.json"
+	filePath string = "/Users/dipeshpradhan/Dipesh/Documents/pass/config.json"
 )
 
 // Configuration stores the config
